@@ -1,0 +1,319 @@
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    overflow:hidden;
+}
+
+.main{
+    display:flex;
+    height:100vh;
+    padding:0.5rem;
+}
+
+.sidebar{
+    background-color:black;
+    width:310px;
+    border-radius: 1rem; /*1 rem =16px */
+    margin-right:0.5rem;
+}
+
+.main-content{
+    background-color:#252323c5;
+    flex: 1;   /*this means in a flex all the area except specified area for other items will be occupied by main-content*/
+    border-radius: 0.5rem;
+    height:35.4rem;
+    overflow:auto;          /*scroll attribute....auto means scrollbar will be shown only when the content is to much*/
+}
+
+#hide_scrollbar::-webkit-scrollbar{   /*We need to use id inorder to hide scrollbar using -webkit-scrollbar pseudoclass*/
+    display: none;
+}
+
+.music-player{
+    background: black;
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    height:70px;
+    display:flex;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom:0.5rem;
+}
+
+.home{
+    line-height:40px;
+    PADDING:0.2rem 0.8rem;
+}
+
+.home i{
+    font-size: 1.25rem;
+}
+
+.home a{
+    font-size: 1rem;
+    margin-left:1rem;
+}
+
+.search{
+    line-height:40px;
+    opacity:0.7;
+    PADDING:0.2rem 0.8rem;
+}
+
+.search i{
+    font-size: 1.25rem;
+}
+
+.search a{
+    font-size: 1rem;
+    margin-left:1rem;
+}
+
+.search:hover{
+    opacity:1;
+}
+
+.library{
+    height:440px;
+    border-radius: 0.5rem;
+    background-color: #121212;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding:0.8rem 1.2rem;
+    font-size: 1rem;
+    align-items:center;
+}
+
+.lib_opt img{
+    height:22.5px;
+    width:21px;
+    margin-right:1rem;
+}
+
+.icons>i{
+    padding-right:1rem;
+    opacity:0.7;
+}
+
+.icons i:hover{
+    opacity:1;
+}
+
+.lib_opt{
+    opacity:0.7;
+}
+
+.lib_opt:hover{
+    opacity:1;
+}
+
+
+.lib_box{
+    height:11rem;
+}
+
+.box{
+    height:7rem;
+    background-color: #3634347e;
+    border-radius:0.7rem;
+    padding:0.9rem;   
+    margin:1.5rem 0.4rem;
+}
+
+.part1{
+    font-weight:700;
+    font-size:0.85rem;
+    margin-bottom: 1rem;
+}
+
+.part2{
+    font-size: 0.75rem;
+    margin:0.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.box button{
+    padding:0.5rem 1rem;
+    border-radius:1rem;
+    background-color: white;
+    font-weight: 700;
+    margin:0.6rem;
+    border:0px;
+}
+
+
+.arrows{
+    margin-left:1.3rem;
+}
+
+.arrows button{
+    background-color:rgba(17, 16, 16, 0.719);
+    border-radius: 50%;
+    border:0px;
+    padding:0.6rem 0.8rem;
+    color:white;
+    margin-top:1rem;
+    margin-right:0.5rem;
+}
+
+.arrows i{
+    font-size: 1rem;
+}
+
+.buttons button{
+    font-size:0.9rem;
+    padding:0.5rem 0.8rem;
+    margin-right:0.5rem;
+    border-radius: 1rem;
+    background-color:rgb(17, 16, 16);
+    color:white;
+    border:0px;
+}
+
+#white{
+    background-color: white;
+    color:black;
+}
+#round{
+    border-radius: 50%;
+    padding:0.6rem 0.8rem;
+}
+
+.buttons{
+    margin:1rem;
+}
+
+.main_top{
+    display:flex;
+    justify-content:space-between;
+}
+
+.head1{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:1rem;
+}
+
+.original_shows{
+    font-size:1.3rem;
+    font-weight:900;
+    padding:0.3rem 1.1rem;
+}
+
+.showall{
+    padding:0.3rem 1.1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    opacity:0.7;
+}
+
+.song_list1{
+    display:flex ;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.song{
+    background-color:#16151593;
+    border-radius: 0.7rem;
+    height:15rem;
+    width:11rem;
+    margin-bottom:1rem;
+}
+
+.song:hover{
+    background-color:#161515f1;
+    cursor: pointer;
+}
+
+.image img{
+    height:59%;
+    width:84%;
+    border-radius: 0.7rem;
+    margin:0.7rem;
+}
+
+.name{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom:0.6rem;
+}
+
+.studio{
+    font-size: 0.8rem;
+    text-align: center;
+    opacity:0.7;
+}
+
+.song_list2{
+    display:flex;
+    justify-content: flex-start;
+    padding-left:1.3rem;
+}
+
+.controller{
+    height:4rem;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+.controller img{
+    display:inline-block;
+    height:1rem;
+    margin-top: -40px !important;
+    margin:0rem 0.7rem;
+    opacity:0.5;
+}
+
+.controller img:hover{
+    opacity:0.9;
+    cursor: pointer;
+}
+
+#play_button{
+    height:1.6rem;
+}
+
+.showall:hover{
+    opacity:1;
+    cursor: pointer;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    height:5px;
+    position:absolute;
+    bottom:15px;
+    border-radius: 5px;
+    left:50%;
+    transform: translateX(-50%);
+    width:90%;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:green ;
+}
